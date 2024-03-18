@@ -1,0 +1,15 @@
+#newHouseForm {
+  border: 2px solid grey;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#newHouseForm label {
+  display: block;
+}
+#newHouseForm button {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
