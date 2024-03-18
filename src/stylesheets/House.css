@@ -1,0 +1,50 @@
+:root {
+  --color-deleteRed: hsl(4, 100%, 68%);
+  --color-confirmationGreen: hsl(79, 50%, 50%);
+  --color-cautionYellow: hsl(43, 100%, 69%);
+  --color-editGrey: hsl(0, 0%, 89%);
+}
+.house {
+  position: relative;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  width: fit-content;
+}
+.house img {
+  max-width: 300px;
+}
+.house__deleteButton,
+.house__submitButton {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  background-color: var(--color-deleteRed);
+  color: white;
+  cursor: pointer;
+}
+.house__editButton,
+.house__cancelButton {
+  background-color: hsl(0, 0%, 89%);
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.house__cancelButton {
+  background-color: var(--color-cautionYellow);
+}
+.house__submitButton {
+  background-color: var(--color-confirmationGreen);
+}

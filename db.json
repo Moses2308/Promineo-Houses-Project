@@ -1,3 +1,40 @@
 {
-  "homes": []
+  "homes": [
+    {
+      "id": "5180",
+      "owner": "Moses Ventura",
+      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
+      "address": "1057 W. 95th St.",
+      "numBedrooms": "3",
+      "numBathrooms": "1",
+      "totalArea": "1000"
+    },
+    {
+      "id": "d2bf",
+      "owner": "Abraham Ventura",
+      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
+      "address": "2157 W. 35th St.",
+      "numBedrooms": "2",
+      "numBathrooms": "2",
+      "totalArea": "1200"
+    },
+    {
+      "id": "eed5",
+      "owner": "Luis Aguilar",
+      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
+      "address": "4557 W. 35th St.",
+      "numBedrooms": "4",
+      "numBathrooms": "3",
+      "totalArea": "2000"
+    },
+    {
+      "id": "095a",
+      "owner": "George Wittier",
+      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
+      "address": "1870 S. Eastwood Blvd.",
+      "numBedrooms": "3",
+      "numBathrooms": "2",
+      "totalArea": "2000"
+    }
+  ]
 }

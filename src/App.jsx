@@ -14,7 +14,7 @@ function App() {
         updateHousesState={(newArray) => setHousesList(newArray)}
       ></NewHouseForm>
 
-      <div className="homes-container">
+      <div className="houses-container">
         {housesList.map((house) => (
           <House {...house} key={house.id}></House>
         ))}

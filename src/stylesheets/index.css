@@ -1,11 +1,17 @@
 @import url(./reset.css);
 @import url(./NewHouseForm.css);
+@import url(House.css);
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.House img {
-  max-width: 300px;
-}
 #root {
   min-height: 100vh;
+}
+.houses-container {
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 4rem;
 }
