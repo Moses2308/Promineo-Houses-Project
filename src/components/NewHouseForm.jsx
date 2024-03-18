@@ -1,7 +1,7 @@
 import RequestManager from "../requestManager";
 
-export default function NewHouseForm() {
-  function HandleSubmit(event) {
+export default function NewHouseForm(props) {
+  async function HandleSubmit(event) {
     event.preventDefault();
     // logic for default img or user img
     const defaultImg = "https://www.vinebrookhomes.com/img/default.png";
@@ -18,7 +18,9 @@ export default function NewHouseForm() {
       totalArea: event.target.totalArea.value,
     };
     //Posting to server
-    RequestManager.postHouse(NewHouse);
+    await RequestManager.postHouse(NewHouse);
+    //updating houseList state
+    props.updateHousesState(await RequestManager.getHouses());
   }
 
   return (
@@ -46,11 +48,3 @@ export default function NewHouseForm() {
     </form>
   );
 }
-
-/*
-
-TODO: 
-
-form should reset the state of the application for list of houses
-
-*/
