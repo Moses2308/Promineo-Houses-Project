@@ -26,22 +26,57 @@ export default function NewHouseForm(props) {
   return (
     <form action="#" id="newHouseForm" onSubmit={HandleSubmit}>
       <label htmlFor="owner">Owner Name: </label>
-      <input type="text" id="owner" name="owner" />
+      <input
+        type="text"
+        id="owner"
+        name="owner"
+        required
+        placeholder="(required)"
+      />
 
       <label htmlFor="houseImg">House img URL: </label>
-      <input type="text" id="houseImg" name="houseImg" />
+      <input
+        type="text"
+        id="houseImg"
+        name="houseImg"
+        placeholder="(optional)"
+      />
 
       <label htmlFor="address">Address: </label>
-      <input type="text" id="address" name="address" required />
+      <input
+        type="text"
+        id="address"
+        name="address"
+        required
+        placeholder="(required)"
+      />
 
       <label htmlFor="numBedrooms">Number of Bedrooms: </label>
-      <input type="number" name="numBedrooms" id="numBedrooms" required />
+      <input
+        type="number"
+        name="numBedrooms"
+        id="numBedrooms"
+        required
+        placeholder="(required)"
+      />
 
       <label htmlFor="numBathrooms">Number of Bathrooms: </label>
-      <input type="number" name="numBathrooms" id="numBathrooms" required />
+      <input
+        type="number"
+        name="numBathrooms"
+        id="numBathrooms"
+        required
+        placeholder="(required)"
+      />
 
       <label htmlFor="totalArea">Total Area</label>
-      <input type="number" name="totalArea" id="totalArea" required />
+      <input
+        type="number"
+        name="totalArea"
+        id="totalArea"
+        required
+        placeholder="(required)"
+      />
 
       <button type="submit">Create House</button>
       <button type="reset">Clear</button>
