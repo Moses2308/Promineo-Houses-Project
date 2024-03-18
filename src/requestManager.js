@@ -1,6 +1,6 @@
 export default class RequestManager {
   static async getHouses() {
-    const response = await fetch("http://localhost:5000/homes");
+    const response = await fetch("http://localhost:5500/homes");
     const houseData = await response.json();
     return houseData;
   }
@@ -13,6 +13,13 @@ export default class RequestManager {
       },
       body: JSON.stringify(houseObject),
     };
-    await fetch("http://localhost:5000/homes", fetchOptions);
+    await fetch("http://localhost:5500/homes", fetchOptions);
+  }
+
+  static async deleteHouse(id) {
+    const fetchOptions = {
+      method: "Delete",
+    };
+    await fetch(`http://localhost:5500/homes/${id}`, fetchOptions);
   }
 }

@@ -5,6 +5,7 @@ import HouseAddress from "./HouseAddress";
 import HouseArea from "./HouseArea";
 import HouseBathrooms from "./HouseBathrooms";
 import HouseBedrooms from "./HouseBedrooms";
+import RequestManager from "../requestManager";
 
 export default function House(props) {
   const [editMode, setEditMode] = useState(false);
@@ -33,12 +34,13 @@ export default function House(props) {
       {editMode ? (
         <EditButtons setEditMode={setEditMode} />
       ) : (
-        <Defaultbuttons setEditMode={setEditMode} />
+        <Defaultbuttons {...props} setEditMode={setEditMode} />
       )}
     </div>
   );
 }
 //TODO : IMPLEMENT DELETE FUNCTIONALITY
+//needs to update houseslist state variable and send a delete request
 function Defaultbuttons(props) {
   return (
     <>
@@ -52,7 +54,12 @@ function Defaultbuttons(props) {
       <button
         type="button"
         className="house__deleteButton"
-        onClick={async () => {}}
+        onClick={async () => {
+          props.setHousesList(
+            props.housesList.filter((house) => house.id != props.id)
+          );
+          await RequestManager.deleteHouse(props.id);
+        }}
       >
         Delete
       </button>

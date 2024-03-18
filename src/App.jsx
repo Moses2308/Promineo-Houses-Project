@@ -16,7 +16,12 @@ function App() {
 
       <div className="houses-container">
         {housesList.map((house) => (
-          <House {...house} key={house.id}></House>
+          <House
+            {...house}
+            key={house.id}
+            housesList={housesList}
+            setHousesList={setHousesList}
+          ></House>
         ))}
       </div>
     </>
