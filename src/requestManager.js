@@ -22,4 +22,15 @@ export default class RequestManager {
     };
     await fetch(`http://localhost:5500/homes/${id}`, fetchOptions);
   }
+
+  static async putHouse(id, houseObject) {
+    const fetchOptions = {
+      method: "PUT",
+      header: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(houseObject),
+    };
+    await fetch(`http://localhost:5500/homes/${id}`, fetchOptions);
+  }
 }

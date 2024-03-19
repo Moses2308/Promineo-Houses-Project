@@ -20,6 +20,7 @@ export default function NewHouseForm(props) {
     //Posting to server
     await RequestManager.postHouse(NewHouse);
     //updating houseList state
+    event.target.reset();
     props.updateHousesState(await RequestManager.getHouses());
   }
 
@@ -69,7 +70,7 @@ export default function NewHouseForm(props) {
         placeholder="(required)"
       />
 
-      <label htmlFor="totalArea">Total Area</label>
+      <label htmlFor="totalArea">Total Area (Sqft): </label>
       <input
         type="number"
         name="totalArea"

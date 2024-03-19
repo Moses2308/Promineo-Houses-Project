@@ -5,16 +5,23 @@
   --color-editGrey: hsl(0, 0%, 89%);
 }
 .house {
-  min-height: 415px;
+  min-height: 432px;
   min-width: 350px;
   position: relative;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
   border: 1px solid grey;
   border-radius: 1rem;
   width: fit-content;
 }
 .house img {
   max-width: 300px;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-editGrey);
+  margin-bottom: 1.5rem;
 }
 .house__deleteButton,
 .house__submitButton {

@@ -34,7 +34,6 @@ function HouseContent(props) {
 }
 
 // needs props from house and setEditMode
-//delete is functional
 function Defaultbuttons(props) {
   return (
     <>

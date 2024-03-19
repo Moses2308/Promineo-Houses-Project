@@ -1,40 +1,49 @@
 {
   "homes": [
     {
-      "id": "d2bf",
-      "owner": "Abraham Ventura",
-      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
+      "owner": "Random Person",
+      "houseImg": "https://www.bhg.com/thmb/rHNvrcup_R5Mm2xiCTL34zkjefc=/4653x0/filters:no_upscale():strip_icc()/101318214_preview-6e44a19fb4af42559cdf1b749a7e9148.jpg",
       "address": "2157 W. 35th St.",
-      "numBedrooms": "2",
-      "numBathrooms": "2",
-      "totalArea": "1200"
-    },
-    {
-      "id": "eed5",
-      "owner": "Luis Aguilar",
-      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
-      "address": "4557 W. 35th St.",
-      "numBedrooms": "4",
+      "totalArea": "1400",
       "numBathrooms": "3",
-      "totalArea": "2000"
+      "numBedrooms": "2",
+      "id": "d2bf"
     },
     {
-      "id": "095a",
-      "owner": "George Wittier",
-      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
-      "address": "1870 S. Eastwood Blvd.",
-      "numBedrooms": "3",
-      "numBathrooms": "2",
-      "totalArea": "2000"
-    },
-    {
-      "id": "eafa",
-      "owner": "Moses Ventura",
-      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
-      "address": "1057 W. 95th St.",
-      "numBedrooms": "3",
+      "owner": "Joseph Wittier",
+      "houseImg": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg",
+      "address": "3 Annadale Street South Bend",
+      "totalArea": "1200",
       "numBathrooms": "1",
-      "totalArea": "1200"
+      "numBedrooms": "2",
+      "id": "faf9"
+    },
+    {
+      "owner": "Clinton Odonnell",
+      "houseImg": "https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg",
+      "address": "7020 Shore Ave. Gainesville",
+      "totalArea": "1500",
+      "numBathrooms": "2",
+      "numBedrooms": "2",
+      "id": "5712"
+    },
+    {
+      "owner": "George Orwell",
+      "houseImg": "https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
+      "address": "1298 E. Oakwood Blvd",
+      "totalArea": "2000",
+      "numBathrooms": "3",
+      "numBedrooms": "2",
+      "id": "502c"
+    },
+    {
+      "owner": "George Orwell",
+      "houseImg": "https://www.vinebrookhomes.com/img/default.png",
+      "address": "7020 Shore Ave. Gainesville",
+      "totalArea": "3000",
+      "numBathrooms": "2",
+      "numBedrooms": "3",
+      "id": "ea35"
     }
   ]
 }
